@@ -4,3 +4,39 @@ html {
   color: seashell;
   background-color: black;
 }
+
+header {
+  position: fixed;
+  width: 100%;
+}
+
+nav {
+  height: 3rem;
+  border-bottom: 1px solid seashell;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .navbar {
+} */
+
+/* TODO: consider a media query for truncated navbar */
+.navbar li {
+  display: inline-block;
+  text-decoration: underline;
+  margin: 0 .5em;
+  overflow: hidden;
+}
+
+.logo {
+  display: inline-block;
+  height: 50px;
+  width: auto;
+}
+
+main {
+  opacity: .9;
+  position: relative;
+  top: 3rem;
+}
