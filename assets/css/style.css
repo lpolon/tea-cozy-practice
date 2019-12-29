@@ -22,7 +22,7 @@ nav {
 /* .navbar {
 } */
 
-/* TODO: consider a media query for truncated navbar */
+
 .navbar li {
   display: inline-block;
   text-decoration: underline;
@@ -46,7 +46,7 @@ main {
 }
 
 .hero-container {
-  height: 700px;
+  min-height: 700px;
   width: 90%;
   margin: 0 auto;
   background-image: url("../images/img-mission-background.jpg");
@@ -72,13 +72,14 @@ main {
 }
 
 .card-container {
-  max-height: 600px;
+  min-height: 600px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-content: flex-start;
   align-items: center;
+  overflow: auto;
 }
 
 .card {
@@ -91,16 +92,21 @@ main {
   height: 200px;
   width: auto;
 }
-/* TODO: fix position of location content using display flex and padding */
+
 .location {
+  padding-top: 3rem;
   background-image: url("../images/img-locations-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
   width: 90%;
-  height: 500px;
+  min-height: 500px;
   margin: 3em auto 0 auto;
   text-align: center;
+}
+
+.location h2 {
+  margin: .6rem;
 }
 
 .location-card {
@@ -110,6 +116,20 @@ main {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
+  margin: .6rem .9rem;
+}
 
-  /* display: flex; */
+.location-card span {
+  display: block;
+}
+
+.contact {
+  min-height: 200px;
+  padding-bottom: .9em;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer {
+  text-align: left;
 }
